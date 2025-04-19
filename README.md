@@ -46,11 +46,27 @@ The server can be run directly with Python:
 python main.py
 ```
 
-Alternatively, you can use the VS Code MCP extension with the provided `mcp.json` configuration:
+### Using with VS Code MCP Extension
+
+You can use the VS Code MCP extension with the provided `mcp.json` configuration:
 
 1. Install the MCP extension in VS Code
 2. Open the project in VS Code
 3. Use the "Connect to MCP Server" command and select "commander" server
+
+### Using with MCP Inspector
+
+To test and inspect the MCP server using the MCP Inspector tool:
+
+```bash
+npx @modelcontextprotocol/inspector \
+  uv \
+  --directory ${PWD} \
+  run \
+  main.py
+```
+
+This command runs the Inspector tool which connects to the MCP server and allows you to interact with the available tools for testing purposes.
 
 ## Available Tools
 
