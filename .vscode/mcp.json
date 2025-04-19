@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "commander": {
+      "command": "uv",
+      "args": ["--directory", "${workspaceFolder}", "run", "main.py"]
+    }
+  }
+}
