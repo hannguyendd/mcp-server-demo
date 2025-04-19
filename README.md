@@ -69,13 +69,22 @@ print(result)
 - `main.py` - Main server implementation
 - `pyproject.toml` - Project dependencies and metadata
 - `.vscode/mcp.json` - VS Code MCP configuration
+- `uv.lock` - Dependency lock file for uv package manager
 - `.env` - Environment variables (not included in repository)
 
 ## Dependencies
 
-- httpx (>=0.28.1)
 - mcp[cli] (>=1.6.0)
 - python-dotenv (required but not explicitly mentioned in pyproject.toml)
+
+## Development
+
+This project uses `uv` for Python package management, which provides faster dependency resolution and installation compared to traditional pip.
+
+To update dependencies:
+```
+uv pip install -e .
+```
 
 ## License
 
